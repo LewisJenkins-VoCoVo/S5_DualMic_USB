@@ -9,6 +9,21 @@ This a fork of the 'pico-USB-microphone' project, which has been adapted to:
 
 This version requires a heavily modified S5.
 
+The main code is stored in /examples/usb_microphone. The pin assignments are now:
+
+| Raspberry Pi Pico / RP2040 | Peripheral Function |
+| -------------------------- | ----------------- |
+| 3.3V | VCC |
+| GND | GND |
+| GPIO 2 | DAT_L |
+| GPIO 3 | CLK_L |
+| GPIO 4 | DAT_R |
+| GPIO 5 | CLK_R |
+| GPIO 26 | SDA |
+| GPIO 27 | SCL |
+
+For reference, the original repo's readme has been preserved below.
+
 # Microphone Library for Pico
 
 Capture audio from a microphone on your [Raspberry Pi Pico](https://www.raspberrypi.org/products/raspberry-pi-pico/) or any [RP2040](https://www.raspberrypi.org/products/rp2040/) based board. 🎤
