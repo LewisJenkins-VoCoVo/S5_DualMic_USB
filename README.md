@@ -1,3 +1,14 @@
+# S5 Dual PDM Microphone to USB
+
+This a fork of the 'pico-USB-microphone' project, which has been adapted to:
+
+- Operate at a clock speed of 768kHz, and correct the decimation by lowering the sampling rate from 16kHz to 12kHz (as decimations lower than 64 are not supported by OpenPDMtoPCM)
+- Operate two microphones simultaneously in master-mode.
+- Adapt the USB descriptors to advertise a stereo device operating at 12kHz sampling rate.
+- Implement I2C to drive the Control PCBA's LED via the IO expander, provision for button presses also included.
+
+This version requires a heavily modified S5.
+
 # Microphone Library for Pico
 
 Capture audio from a microphone on your [Raspberry Pi Pico](https://www.raspberrypi.org/products/raspberry-pi-pico/) or any [RP2040](https://www.raspberrypi.org/products/rp2040/) based board. 🎤
